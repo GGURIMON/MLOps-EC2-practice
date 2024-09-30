@@ -55,7 +55,7 @@ jobs:
         
       - name: Copy files to EC2
         run: |
-          scp -r -o StrictHostKeyChecking=no . ec2-user@${{ secrets.EC2_IP }}:/home/ec2-user/ml-inference-server
+          scp -r -o StrictHostKeyChecking=no * ec2-user@${{ secrets.EC2_IP }}:/home/ec2-user/ml-inference-server
 
       - name: Deploy on EC2
         run: |
