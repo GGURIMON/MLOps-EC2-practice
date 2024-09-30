@@ -30,6 +30,11 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Run train.py
+        run: |
+          . .venv/bin/activate
+          python app/train.py
+
       - name: Run tests
         run: |
           . .venv/bin/activate
