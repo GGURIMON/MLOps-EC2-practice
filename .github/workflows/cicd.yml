@@ -49,7 +49,7 @@ jobs:
     
     steps:
       - name: Check out repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
 
       - name: Use SSH key  
         uses: webfactory/ssh-agent@v0.5.3
